@@ -1,0 +1,22 @@
+.navbar {
+    background-color: rgb(91, 102, 33);
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .navbar-cointainer {
+    padding: 0 !important;
+  }
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    color: black !important;
+  }
+  .color-white {
+    color: #fff !important;
+  }
+  .logo {
+    /* opacity: 50%; */
+    background-color: rgb(91, 102, 33);
+
+  }
