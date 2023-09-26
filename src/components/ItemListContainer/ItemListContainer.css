@@ -8,3 +8,9 @@
     border-radius: 10px;
     background-color: rgb(91, 102, 33);
   }
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
