@@ -3,18 +3,37 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer";
 import Navigation from "./routes/Navigation";
+import { useEffect, useState } from "react";
 
 function App() {
 
+  const [productos, setProductos] = useState([]);
+
+  const getProductos = () => {
+    return new Promise ((resolve, reject) => {
+      resolve(listaProductos)
+    })
+  }
+
+  useEffect(() => {
+    getProductos()
+    .then((res) => {
+      setProductos(res)
+    })
+  }, [])
+
 
   return(
-    <main>
-      {/* <Navbar/>
-      <ItemListContainer greeting = "Bienvenidos a ImporTech"/> */}
-      <Navbar />
-      <Navigation />
+    <>
+      <header>
+        <Navbar />
+      </header>
 
-    </main>
+      <main>
+        <ItemListContainer greeting = {"Bienvenidos a ImporTech"} productos ={productos}/>
+        <Navigation />
+      </main>
+    </>
   );
 }
 

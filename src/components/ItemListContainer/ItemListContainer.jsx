@@ -12,22 +12,29 @@
 // export default ItemListContainer;
 import Item from "../Item/Item";
 import "./ItemListContainer.css";
-import { Button } from '@mui/material';
+import { Button } from 'react-bootstrap';
 
 
 
-const ItemListContainer = ({router, handleConsole}) => {
+function ItemListContainer  ({greeting, productos}) {
 
   return (
-    <div className="container">
-      {router.map((ruta) => {
-      return (
-        <Item key={ruta.id} prodSelec={ruta}/>
-        )
-      })}
+    <>
+      <div className = "greeting">
+        <span>{greeting}</span>
+      </div>
+      <div className="container flex-row">
+        {productos.map((item) => {
+        return (
+            <div>
+              <Item key={item.id} prodSelec={item}/>
+            </div>
+          )
+        })}
 
-      <Button variant="outlined" onClick={()=> handleConsole()}> Elegime </Button>
-    </div>
+        <Button variant="outlined"> Elegime </Button>
+      </div>
+    </>
   );
 };
 

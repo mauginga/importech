@@ -74,21 +74,21 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Navbar.css';
-import logo from '../../assets/images/logo1.png';
+import logo from '../../../public/assets/images/logo1.png';
 import Cart from '../CartWidget/CartWidget';
 
 function Navegador() {
     return (
         <div>
-            <Navbar bg="light" data-bs-theme="light">
+            <Navbar expand="lg" bg="light" data-bs-theme="light">
                 <Container className="navbar">
                     <Navbar.Brand>
-                        <img src={logo} alt="logo de tu jardin interior" style={{ width: '150px', height: 'auto' }} />
+                        <img src={logo} alt="importados" style={{ width: '150px', height: 'auto' }} />
                     </Navbar.Brand>
                     <Nav>
-                        <Nav.Link href="#home">Plantas de Interior</Nav.Link>
-                        <Nav.Link href="#features">Macetas</Nav.Link>
-                        <Nav.Link href="#pricing">Accesorios</Nav.Link>
+                        <Nav.Link href="#home">Telefonos</Nav.Link>
+                        <Nav.Link href="#features">Portatiles</Nav.Link>
+                        <Nav.Link href="#pricing">Relojes</Nav.Link>
                         <Nav.Link href="#pricing">Contacto</Nav.Link>
                     </Nav>
                     <Cart />

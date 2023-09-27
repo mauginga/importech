@@ -8,7 +8,8 @@ export const productos = [
       precio: 799,
       categoria: "telefonos",
       stock: 50,
-      descripcion: "El último iPhone de Apple con pantalla OLED."
+      descripcion: "El último iPhone de Apple con pantalla OLED.",
+      imgUrl: ""
     },
     {
       id: 2,
@@ -16,7 +17,8 @@ export const productos = [
       precio: 999,
       categoria: "portatiles",
       stock: 30,
-      descripcion: "Ligero y potente, perfecto para la productividad."
+      descripcion: "Ligero y potente, perfecto para la productividad.",
+      imgUrl: "../public/assets/images/iPhone12.jpg"
     },
     {
       id: 3,
